@@ -1,7 +1,7 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { Data } from '../../providers/data/data';
+import { NavController, NavParams, Slides } from 'ionic-angular';
+import { QuestionProvider } from '../../providers/question/question';
 
 @Component({
   selector: 'page-quiz',
@@ -9,7 +9,7 @@ import { Data } from '../../providers/data/data';
 })
 export class QuizPage {
 
-  @ViewChild('slides') slides: any;
+  @ViewChild('slides') slides: Slides;
 
   hasAnswered: boolean = false;
   score: number = 0;
@@ -17,7 +17,7 @@ export class QuizPage {
   questions: any;
 
 
-  constructor(public dataService: Data,
+  constructor(public questionProvider: QuestionProvider,
     public navCtrl: NavController,
     public navParams: NavParams) {
   }
@@ -26,19 +26,15 @@ export class QuizPage {
 
     this.slides.lockSwipes(true);
 
-    this.dataService.load().then((data) => {
+    this.questionProvider.loadQuestions()
+      .then((data) => {
 
-      data.map((question) => {
-
-        let originalOrder = question.answers;
-        question.answers = this.randomizeAnswers(originalOrder);
-        return question;
+        console.log("questions", data);
+        if (data) {
+          this.questions = data;
+        }
 
       });
-
-      this.questions = data;
-
-    });
 
   }
 
@@ -82,7 +78,7 @@ export class QuizPage {
   restartQuiz() {
     this.score = 0;
     this.slides.lockSwipes(false);
-    this.slides.slideTo(1, 1000);
+    this.slides.slideTo(0, 1000, false);
     this.slides.lockSwipes(true);
   }
 

@@ -1,0 +1,4 @@
+<sql>
+    <statement id="0">INSERT INTO QUESTION(ID_QUESTION,DS_QUESTION,OPT1,OPT2,OPT3,OPT4,SCORE) VALUES (1, 'Qual o significado de DDL?','Definição de leitura','Definição de dados','Linguagem de estrutura de banco','Linguagem de definição de dados', 5);</statement>
+    <statement id="1">INSERT INTO QUESTION_ANSWER(ID_QUESTION_ANSWER,ID_QUESTION,DS_ANSWER,CK_CORRECT) VALUES (1,1,'opt2','N');</statement>
+</sql>
