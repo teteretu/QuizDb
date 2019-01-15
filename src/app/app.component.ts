@@ -6,29 +6,31 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DatabaseProvider } from '../providers/database/database';
 
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = TabsPage;
 
-  constructor(platform: Platform, 
-    statusBar: StatusBar, 
-    splashScreen: SplashScreen,
+  constructor(public platform: Platform, 
+    public statusBar: StatusBar, 
+    public splashScreen: SplashScreen,
     private databaseProvider: DatabaseProvider) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
-      splashScreen.hide();
-
       this.initializeApp();
     });
 
   }
 
   initializeApp() {
-      
+    // this.platform.ready().then(_ => {
+    //   this.statusBar.styleDefault();
+    //   this.splashScreen.hide();
+
+    //   timer(3000).subscribe(_ => this.showSplash = false)
+    // });
+
     this.databaseProvider.createDatabase()
       .then(() => {
         console.log("DB iniciado com sucesso");

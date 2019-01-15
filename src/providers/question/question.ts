@@ -16,6 +16,8 @@ export class QuestionProvider {
 				.then((db: SQLiteObject) => {
 					let sql = 'SELECT * FROM question';
 
+					console.log("sql", sql);
+					
 					return db.executeSql(sql)
 						.then((result: any) => {
 							if (result.rows.length >= 1) {

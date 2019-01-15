@@ -13,7 +13,6 @@ export class QuizPage {
 
   hasAnswered: boolean = false;
   score: number = 0;
-  slideOptions: any;
   questions: any;
 
 
@@ -26,6 +25,7 @@ export class QuizPage {
 
     this.slides.lockSwipes(true);
 
+    console.log("load questions");
     this.questionProvider.loadQuestions()
       .then((data) => {
 

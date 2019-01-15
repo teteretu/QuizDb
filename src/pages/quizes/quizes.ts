@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Data } from '../../providers/data/data';
 
 @IonicPage()
 @Component({
@@ -8,8 +7,7 @@ import { Data } from '../../providers/data/data';
   templateUrl: 'quizes.html',
 })
 export class QuizesPage {
-  constructor(public data: Data,
-    public navCtrl: NavController,
+  constructor(public navCtrl: NavController,
     public navParams: NavParams) {
   }
 
@@ -24,9 +22,9 @@ export class QuizesPage {
   }
 
   goArticle(x) {
-    this.data.category = this.category;
-    this.data.sub = this.sub;
-    this.data.quiz = x;
+    // this.data.category = this.category;
+    // this.data.sub = this.sub;
+    // this.data.quiz = x;
     this.navCtrl.push('QuizPage', { sub: this.sub, category: this.category, article: x });
   }
 

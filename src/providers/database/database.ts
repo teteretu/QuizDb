@@ -25,21 +25,33 @@ export class DatabaseProvider {
   createDatabase() {
     let _db: SQLiteObject;
 
+    console.log("creating DB");
     return new Promise(() => {
       return this.getDB()
         .then((db: SQLiteObject) => {
           _db = db;
         })
         .then(_ => {
+          console.log("createded");
           return new Promise((resolve, reject) => {
             this.http.get('assets/sqlite-kickstart/DDL.xml').subscribe(ddl => {
               let parser = new xml2js.Parser();
 
+              console.log("running DDL to string", ddl.toString());
+              console.log("running DDL JSON", ddl.json);
+              console.log("running DDL", ddl);
+              
               parser.parseString(ddl.toString(), (err, res) => {
+                
+                console.error("parse string err", err);
+                console.log("res", res);
+                console.log(res.sql.statement);
 
                 _db.sqlBatch(res.sql.statement)
                   .then(() => resolve())
                   .catch(err => reject(err));
+                
+                
               });
             });
           });
@@ -48,13 +60,16 @@ export class DatabaseProvider {
           return new Promise((resolve, reject) => {
             this.http.get('assets/sqlite-kickstart/DML.xml').subscribe(dml => {
               let parser = new xml2js.Parser();
-
+              
+              console.log("runing DML");
               parser.parseString(dml.toString(), (err, res) => {
 
                 let batch = [];
                 for (let sql of res.sql.statement) {
                   batch.push(sql._);
                 }
+                
+                console.log("end Creat connection");
 
                 _db.sqlBatch(batch)
                   .then(() => resolve())

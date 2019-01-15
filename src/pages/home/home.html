@@ -1,3 +1,10 @@
+<div *ngIf="showSplash" class="splash">
+  <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+  </div>
+</div>
+
 <ion-header>
   <ion-navbar>
     <ion-title>Home</ion-title>
@@ -9,7 +16,7 @@
   <p>
     O app foi desenvolvido com o intuito de aprender e exercitar o conteúdo de banco de dados!!
   </p>
-  <p>
-    <img src="" alt="">
-  </p>
+  <button style="padding: 0; background-color: #429765; margin-top: 50px;" (tap)="goQuizM()">
+    <img style="width: 80%;" src="assets/imgs/quiz_logo.jpg" alt="Go Quiz">
+  </button>
 </ion-content>
