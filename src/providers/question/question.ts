@@ -8,8 +8,9 @@ import { Const } from '../../const/Const';
 @Injectable()
 export class QuestionProvider {
 
-	num = [];
-	tmpNum = 0;
+	// colocar o index do array de questions que vai retornar;
+	num: Array<number> = [];
+	tmpNum: number = 0;
 
 	constructor(private databaseProvider: DatabaseProvider) {
 	}
@@ -17,11 +18,15 @@ export class QuestionProvider {
 	loadQuestions(qtQuestions) {
 
 		let questions = [];
-		
+
 		while (qtQuestions > 0) {
 			questions.push(this.getRandomQuestion());
 			qtQuestions--;
 		}
+
+		console.log("questions return", questions);
+		
+		return questions;
 
 		// return new Promise((resolve, reject) => {
 		// 	this.databaseProvider.getDB()
@@ -52,25 +57,35 @@ export class QuestionProvider {
 	}
 
 	getRandomQuestion() {
-		this.tmpNum = Math.random() * Const.questions.length;
+		let questions = Const.questions;
+		this.tmpNum = Math.floor(Math.random() * questions.length);
+		console.log("this.tmpNum", this.tmpNum);
+		console.log("num", this.num);
+		console.log("Const.questions", questions);
 
-		if (this.num.indexOf(this.tmpNum) > -1)
+		console.log("Const.questions", this.num.indexOf(this.tmpNum));
+
+		if (this.num.indexOf(this.tmpNum) == -1) {
 			this.num.push(this.tmpNum);
-		else {
-			while (this.num.indexOf(this.tmpNum) == -1) {
-				this.tmpNum = Math.random() * Const.questions.length;
+		} else {
+			// enquanto não achou no array continue
+			while (this.num.indexOf(this.tmpNum) > -1) {
+				this.tmpNum = Math.floor(Math.random() * questions.length);
 
-				if (this.num.indexOf(this.tmpNum) > -1)
+				if (this.num.indexOf(this.tmpNum) == -1) {
 					this.num.push(this.tmpNum);
+					break;
+				}
+				console.log("Const.questions", this.num.indexOf(this.tmpNum));
 
 			}
-
 		}
+
 		console.log("tmpNum", this.tmpNum);
 		console.log("num", this.num);
-		console.log("Const.questions", Const.questions);
+		console.log("Const.questions", questions);
 
-		return Const.questions[this.tmpNum];
+		return questions[this.tmpNum];
 	}
 
 	processRow(rs: any): Question {

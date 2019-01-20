@@ -1,7 +1,9 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams, Slides } from 'ionic-angular';
+import { NavController, NavParams, Slides, ToastController } from 'ionic-angular';
 import { QuestionProvider } from '../../providers/question/question';
+import { Question } from '../../model/question';
+import { QuestionAnswerProvider } from '../../providers/question-answer/question-answer';
 
 @Component({
   selector: 'page-quiz',
@@ -11,14 +13,16 @@ export class QuizPage {
 
   @ViewChild('slides') slides: Slides;
 
-  hasAnswered: boolean = false;
+  hasFinished: boolean = false;
   score: number = 0;
-  questions: any;
+  questions = [];
 
 
   constructor(public questionProvider: QuestionProvider,
     public navCtrl: NavController,
-    public navParams: NavParams) {
+    public navParams: NavParams,
+    // private questionAnswerProvider: QuestionAnswerProvider
+    public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -26,7 +30,7 @@ export class QuizPage {
     this.slides.lockSwipes(true);
 
     console.log("load questions");
-    this.questions = this.questionProvider.loadQuestions(5)/*
+    this.questions = this.questionProvider.loadQuestions(5);/*
       .then((data) => {
 
         console.log("questions", data);
@@ -38,41 +42,41 @@ export class QuizPage {
 
   }
 
+  ngOnChanges() {
+    console.log("active slide", this.slides.isEnd());
+  }
+
   nextSlide() {
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
 
-  selectAnswer(answer, question) {
+  selectAnswer(opt: number, question: Question) {
+    // this.questionAnswerProvider.setAnswerByQuestion(question.idQuestion, ckCorrect);
 
-    this.hasAnswered = true;
-    answer.selected = true;
-    question.flashCardFlipped = true;
+    question.selected = true;
 
-    if (answer.correct) {
+    if (question.optCorrectAnswer == opt) {
       this.score++;
+
+      const toast = this.toastCtrl.create({
+        message: 'Resposta Correta!!',
+        duration: 3000
+      });
+      toast.present();
+
+    } else {
+      const toast = this.toastCtrl.create({
+        message: 'Resposta Incorreta!!',
+        duration: 3000
+      });
+      toast.present();
     }
 
     setTimeout(() => {
-      this.hasAnswered = false;
       this.nextSlide();
-      answer.selected = false;
-      question.flashCardFlipped = false;
     }, 3000);
-  }
-
-  randomizeAnswers(rawAnswers: any[]): any[] {
-
-    for (let i = rawAnswers.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      let temp = rawAnswers[i];
-      rawAnswers[i] = rawAnswers[j];
-      rawAnswers[j] = temp;
-    }
-
-    return rawAnswers;
-
   }
 
   restartQuiz() {

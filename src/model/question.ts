@@ -8,5 +8,6 @@ export class Question {
     opt4: string;
     score: number;
     optCorrectAnswer: number;
+    selected: boolean;
 
 }

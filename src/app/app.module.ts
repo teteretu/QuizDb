@@ -11,10 +11,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpModule } from '@angular/http';
-import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { SQLite } from '@ionic-native/sqlite'
 import { DatabaseProvider } from '../providers/database/database';
 import { QuestionProvider } from '../providers/question/question';
+import { QuestionAnswerProvider } from '../providers/question-answer/question-answer';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,6 @@ import { QuestionProvider } from '../providers/question/question';
     QuizPage,
     HomePage,
     TabsPage,
-    FlashCardComponent
     
   ],
   imports: [
@@ -44,7 +43,8 @@ import { QuestionProvider } from '../providers/question/question';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     QuestionProvider,
     SQLite,
-    DatabaseProvider
+    DatabaseProvider,
+    QuestionAnswerProvider
   ]
 })
 export class AppModule {}
