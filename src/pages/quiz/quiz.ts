@@ -26,7 +26,7 @@ export class QuizPage {
     this.slides.lockSwipes(true);
 
     console.log("load questions");
-    this.questionProvider.loadQuestions()
+    this.questions = this.questionProvider.loadQuestions(5)/*
       .then((data) => {
 
         console.log("questions", data);
@@ -34,7 +34,7 @@ export class QuizPage {
           this.questions = data;
         }
 
-      });
+      })*/;
 
   }
 

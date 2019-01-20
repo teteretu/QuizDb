@@ -11,8 +11,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class HomePage {
 
-  showSplash = true;
-
   constructor(public navCtrl: NavController,
     public platform: Platform,
     public statusBar: StatusBar, 
@@ -22,12 +20,6 @@ export class HomePage {
       });
   }
   initializeApp() {
-    this.platform.ready().then(_ => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-
-      timer(3000).subscribe(_ => this.showSplash = false)
-    });
 
   }
   
