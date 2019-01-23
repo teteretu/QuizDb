@@ -22,11 +22,12 @@
 
     <ion-slide *ngFor="let question of questions; let i = index;">
 
-      <h3>Questão {{i+1}}</h3>
+      <ion-scroll style="height: 430px">
 
-      <h5>{{question.dsQuestion}}</h5>
+        <h3>Questão {{i+1}}</h3>
 
-      <ion-scroll style="height: 200px">
+        <h5>{{question.dsQuestion}}</h5>
+
         <ion-list no-lines radio-group>
 
           <ion-item *ngIf="question.opt1">

@@ -3,13 +3,15 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Slides, ToastController } from 'ionic-angular';
 import { QuestionProvider } from '../../providers/question/question';
 import { Question } from '../../model/question';
-import { QuestionAnswerProvider } from '../../providers/question-answer/question-answer';
+// import { QuestionAnswerProvider } from '../../providers/question-answer/question-answer';
 
 @Component({
   selector: 'page-quiz',
   templateUrl: 'quiz.html',
 })
 export class QuizPage {
+
+  NUM_QUESTIONS = 5;
 
   @ViewChild('slides') slides: Slides;
 
@@ -30,7 +32,7 @@ export class QuizPage {
     this.slides.lockSwipes(true);
 
     console.log("load questions");
-    this.questions = this.questionProvider.loadQuestions(5);/*
+    this.questions = this.questionProvider.loadQuestions(this.NUM_QUESTIONS);/*
       .then((data) => {
 
         console.log("questions", data);
@@ -62,24 +64,25 @@ export class QuizPage {
 
       const toast = this.toastCtrl.create({
         message: 'Resposta Correta!!',
-        duration: 3000
+        duration: 2000
       });
       toast.present();
 
     } else {
       const toast = this.toastCtrl.create({
         message: 'Resposta Incorreta!!',
-        duration: 3000
+        duration: 2000
       });
       toast.present();
     }
 
     setTimeout(() => {
       this.nextSlide();
-    }, 3000);
+    }, 1000);
   }
 
   restartQuiz() {
+    this.questions = this.questionProvider.loadQuestions(this.NUM_QUESTIONS);
     this.score = 0;
     this.slides.lockSwipes(false);
     this.slides.slideTo(0, 1000, false);

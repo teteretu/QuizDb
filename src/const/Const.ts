@@ -114,140 +114,164 @@ export class Const {
             score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 13, dsQuestion: "Em TSQL, um comando permite a remoção de uma ou mais definições de tabela e todos os dados, índices, gatilhos, restrições e especificações de permissão dessas tabelas. Esse comando é:",
+            opt1: "REMOVE TABLE",
+            opt2: "DROP TABLE",
+            opt3: "ERASE TABLE",
+            opt4: "DELETE TABLE",
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 14, dsQuestion: "EmTSQL, o operador módulo tem por função retornar o resto da divisão de um número por outro. \n O símbolo utilizado para esse operador é:",
+            opt1: "%",
+            opt2: "&",
+            opt3: ".",
+            opt4: "@",
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 15, dsQuestion: "No contexto da recuperação das informações em bancos de dados textuais, um processo consiste em aplicar operações em uma palavra para encontrar sua raiz gramatical, como, por exemplo: “recuperar” é raiz de “recuperação”, “recuperações”, “recuperam” e “recuperado”. Além de ser útil para encontrar possíveis textos relevantes, esse processo também ajuda a reduzir o tamanho da estrutura de indexação, já que diminui o número de índices distintos e é denominado:",
+            opt1: "sheering.",
+            opt2: "smashing.",
+            opt3: "sweeping.",
+            opt4: "streaming.",
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 14, dsQuestion: "Existem diversas notações para o Modelo Entidade-Relacionamento. A notação original foi proposta por Peter Chen e é composta de entidades, relacionamentos, atributos, representados, respectivamente, por:",
+            opt1: "retângulos, losangos e círculos.",
+            opt2: "retângulos, círculos e losangos.",
+            opt3: "losangos, retângulos e círculos.",
+            opt4: "círculos, retângulos e losangos.",
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 15, dsQuestion: "O nível interno de um banco de dados é definido como sendo o mais próximo do meio de armazenamento físico. Nesse nível, estão a representação física dos campos e a sequência física em que os registros estão armazenados no sistema.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 16, dsQuestion: "As linguagens de programação podem ser utilizadas no nível conceitual para que visualize a parte do banco de dados de interesse.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 17, dsQuestion: "No nível externo, pode-se ter uma visão única de todo o banco de dados, incluindo definições de esquemas e restrições de integridade, independentemente do armazenamento físico.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 18, dsQuestion: "O acesso mais comum a banco de dados é realizado por meio de linguagens não procedurais. Como exemplo, a instrução SELECT, em SQL, permite especificar os objetos do banco de dados que serão recuperados, incluindo os detalhes de implementação de como essa recuperação ocorrerá.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 19, dsQuestion: "Na transformação do modelo conceitual para o lógico, a quantidade de atributos das entidades envolvidas determina o método a ser utilizado na implementação dos relacionamentos.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 20, dsQuestion: "Por ser um processo contínuo, o projeto físico permite que sejam realizadas alterações no banco de dados, mesmo após a sua implementação.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 21, dsQuestion: "Durante a etapa do projeto físico, é permitido realizar o particionamento de dados.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 22, dsQuestion: "No projeto lógico, o modelo físico é obtido por meio da transformação do modelo conceitual.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 23, dsQuestion: "Com relação ao tempo de execução de uma consulta, o uso de índices em tabelas é recomendado para que os dados sejam exibidos rapidamente. A eficiência de uma consulta está relacionada à quantidade de índices na tabela: quanto mais índices ela possuir, mais rápida será a execução das operações de leitura e escrita.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 24, dsQuestion: "Entre os recursos do Oracle 11g que permitem ajustar o banco de dados para aumentar seu desempenho estão os índices de chave invertida, que, para atingir esse fim, necessitam, em alguns casos, ser reconstruídos com frequência.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 25, dsQuestion: "A maior parte dos problemas de desempenho em banco de dados não está relacionada à aplicação, mas sim às configurações incorretas dos arquivos de parâmetros realizadas pelos administradores de banco de dados.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 26, dsQuestion: "Nas situações em que muitos usuários realizam inserções de forma concorrente, uma boa prática com relação ao planejamento do desempenho consiste em organizar as inserções de modo que elas envolvam a menor quantidade de tabelas possível.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
         },
         {
-            idQuestion: 0, dsQuestion: "A instrução JOIN em SQL é utilizada para consultar informações de duas ou mais tabelas, baseadas em relações entre colunas destas tabelas. Um dos tipos de JOIN é o INNER JOIN que retorna linhas.",
-            opt1: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas e colunas.",
-            opt2: "quando existir correspondência em apenas uma das tabelas.",
-            opt3: "não importando a correspondência entre as tabelas, criando uma relação entre as linhas, apenas",
-            opt4: "quando existir ao menos uma correspondência em ambas as tabelas.",
-            score: 2, optCorrectAnswer: 4, selected: false
+            idQuestion: 27, dsQuestion: "O uso de views materializadas permite aumentar o desempenho do banco de dados, pois minimiza o acesso às tabelas de dados e torna mais rápida a execução das consultas.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
+        },
+        {
+            idQuestion: 28, dsQuestion: "A instrução, em SQL, grant update (nota) on aluno_disciplina to pedro, miguel; apresenta erro de sintaxe",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
+        },
+        {
+            idQuestion: 29, dsQuestion: "Em SQL, o comando create role acesso_ensino as grant insert, update on ensino_superior, quando executado, cria o papel acesso_ensino, contendo os privilégios de inserir e atualizar na tabela ensino_superior. ",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 2, selected: false
+        },
+        {
+            idQuestion: 30, dsQuestion: "No Oracle 11g, o parâmetro PASSWORD_GRACE_TIME é usado para especificar o número de dias após o qual uma senha expirada deve ser alterada.",
+            opt1: "Verdadeiro.",
+            opt2: "Falso.",
+            opt3: null,
+            opt4: null,
+            score: 2, optCorrectAnswer: 1, selected: false
         }
     ];
 

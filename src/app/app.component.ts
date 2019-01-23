@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
-import { DatabaseProvider } from '../providers/database/database';
+// import { DatabaseProvider } from '../providers/database/database';
 
 import { timer } from 'rxjs/observable/timer';
 
@@ -18,7 +18,8 @@ export class MyApp {
   constructor(public platform: Platform, 
     public statusBar: StatusBar, 
     public splashScreen: SplashScreen,
-    private databaseProvider: DatabaseProvider) {
+    // private databaseProvider: DatabaseProvider
+    ) {
     platform.ready().then(() => {
       this.initializeApp();
     });

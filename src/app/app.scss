@@ -74,3 +74,11 @@
     -webkit-transform: rotate(-360deg);
   }
 }
+
+ion-scroll .scroll-content {
+  overflow-y: scroll !important;
+}
+
+.radio-md .radio-icon {
+  border-color: white;
+}

@@ -8,8 +8,8 @@ export class QuestionAnswerProvider {
   constructor(public http: Http) {
   }
 
-  setAnswerByQuestion(idQuestion, ckCorrect) {
-
+  setAnswerByQuestion() {
+    // idQuestion, ckCorrect
   }
   
 }
