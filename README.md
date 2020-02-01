@@ -6,7 +6,13 @@ QUiz app with result and multiple options.
 ### Installation
 
 ``` 
-npm install 
+Install last version node
+node@10 was used in this project
+
+npm install
+install adb devices
+install gradle
+install ionic -g
 ionic serve
 ````
 
